@@ -1,5 +1,5 @@
 body {
-    font-family: 'Playfair', serif;
+    font-family: 'Playfair Display', serif;
     background: url(background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -185,4 +185,40 @@ form button:hover {
         margin: 20px auto;
         padding: 20px;
     }
+}
+/* Servicii homepage */
+
+.services-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(44, 62, 80, 0.25);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.service-box h3 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
 }
